@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header-message h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.header-message h3 {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.header-message .person-name {
+    background-image: linear-gradient(to right top, #b6db6c, #bdd962, #c5d758, #cdd54e, #d6d244);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-message .dashbord-name {
+    color: #59b240;
+}
+
+.header-button .start-trading-btn {
+    background-color: #59b240;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform:inherit;
+
+}
+
+.header-button .start-trading-btn:hover {
+    background-color: #4d9e3a;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .header-message {
+        text-align: center;
+    }
+    .header-message h1 {
+        font-size: 1.5rem;
+    }
+    .header-message h3 {
+        font-size: 1rem;
+    }
+    .header-button {
+        margin-top: 10px;
+    }
+    .header-button .start-trading-btn {
+        padding: 10px 15px;
+    }
+    
+}

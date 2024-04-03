@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.sidebar-container {
+    width: 200px;
+    background-color: #1c1e1c;
+}
+
+.main-container {
+    width: calc(100% - 200px);
+    height: 100vh;
+    margin: 0;
+    padding: 24px;
+    background-color: #0b0b0b;
+    color: white;
+    overflow-x: auto;
+
+}
+
+@media screen and (max-width: 768px) {
+    /* .container {
+        flex-direction: column;
+    } */
+
+    .sidebar-container {
+        width: 50px;
+    }
+
+    .main-container {
+        width: calc(100% - 50px) !important;
+    }
+
+}

@@ -1,0 +1,24 @@
+.MuiPaper-root.graph-container {
+    width: 550px;
+    height: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Styles for the graph component */
+    .MuiPaper-root.graph-container {
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Styles for the graph component */
+    .MuiPaper-root.graph-container {
+        width: 100%;
+        height: 300px;
+    }
+}

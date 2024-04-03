@@ -1,0 +1,106 @@
+/* Sidebar container */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #1c1e1c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 20px 10px 0 10px;
+    color: white;
+    transition: width 0.3s;
+    margin: 0;
+}
+
+.sidebar-log-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.sidebar .sidebar-toggle-button {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar .sidebar-toggle-button:hover {
+    text-decoration: none;
+    color: #59b240;
+}
+
+
+.sidebar-menu {
+    margin-top: 20px;
+}
+
+.sidebar-menu .sidebar-menuLists {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.sidebar-menu .sidebar-menuLists a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-menu .sidebar-menuLists a:hover {
+    /* background-color: #2c2e2c; */
+    color: #59b240;
+}
+
+.sidebar-menu .sidebar-menuLists a.active-menuList {
+    color: #59b240;
+}
+
+
+.sidebar-menu .sidebar-menuLists a .menuName {
+    padding: 10px;
+}
+
+
+/* Responsive sidebar */
+@media screen and (max-width: 768px) {
+
+
+    .sidebar {
+        width: 50px !important;
+        transition: width 0.3s;
+    }
+
+    .sidebar-log-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar .sidebar-logo {
+        transition: 0.2s;
+        display: none;
+        height: 48px;
+    }
+
+    .sidebar-menu {
+        margin-top: 40px;
+    }
+
+    .sidebar-menu .sidebar-menuLists {
+        padding: 0;
+    }
+
+    .sidebar-menu .sidebar-menuLists a .menuName {
+        display: none;
+    }
+
+    .sidebar-menu .sidebar-menuLists a {
+        padding: 15px 5px;
+        margin-bottom: 10px;
+    }
+
+}
