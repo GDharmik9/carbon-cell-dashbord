@@ -3,7 +3,7 @@
     height: 400px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1139px) {
 
     /* Styles for the graph component */
     .MuiPaper-root.graph-container {
